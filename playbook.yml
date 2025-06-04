@@ -8,8 +8,8 @@
         dest: "opt/tomcat/webapps/MavenAnsiWebApp.war"
         remote_src: no
         
-    - name:
-      systemd: restart tomcat
+    - name: restart tomcat
+      systemd: 
         name: tomcat
         state: restarted
     
