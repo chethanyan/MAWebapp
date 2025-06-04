@@ -9,7 +9,7 @@ pipeline{
 				git branch:'master', url:'https://github.com/chethanyan/MAWebapp.git'
 			}
 		}
-		stage('build'){
+		stage('Build'){
 			steps{
 				sh 'mvn clean package'
 			}
