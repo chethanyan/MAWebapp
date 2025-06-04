@@ -1,8 +1,8 @@
-- name: Deploy to Tomcat
+- name: Deploy in Tomcat
   hosts: web
   become: yes
   tasks:
-    - name: Copy WAR file to Tomcat
+    - name: Copy WAR to Tomcat
       copy:
         src: "/var/snap/jenkins/4870/workspace/tomcatmvn_ansi/target/MavenAnsiWebApp.war"
         dest: "/opt/tomcat/webapps/MavenAnsiWebApp.war"
