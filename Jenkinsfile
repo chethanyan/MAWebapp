@@ -14,7 +14,7 @@ pipeline{
 				sh 'mvn clean package'
 			}
 		}
-		stage('Archieve'){
+		stage('Archeve'){
 			steps{
 				archieveArtifacts artifact:'target/*.war', fingerprint:true
 			}
